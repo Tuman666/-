@@ -9,116 +9,141 @@
         <!-- ТУМАН -->
         <header class="header">
             <!-- Логотип -->
-            <a><img class="header__logo"src="images/Picsart_24-11-27_12-16-13-519.png" width="350" height="250"></a>
+            <a class="header__link" href="#"><img class="header__logo"src="images/Picsart_24-11-27_12-16-13-519.png" width="350" height="250"></a>
             <!--/ Логотип -->
+         <section class="section search">
+                <h2 class="section__title section__title--center">Поиск книг</h2>
+                <form class="search__form form" action="/" method="get">
+                    <input class="search__form-name form__field" type="search" name="text" placeholder="Название книги">
+                    <button class="search__form-submit button button--accent" type="submit">Поиск</button>
+                </form>
+            </section>
 
             <button class="header__button" type="button">
-                <img src="lovepik-vectorial-office-icons-png-image_400272348_wh300.png" alt="Регистрация" width="16" height="16">
-                Регистрация
+                <img src="images/рег.png" alt="Регистрация" width="16" height="16"> Регистрация
             </button>
                     <!-- Навигация -->
-                        <nav>
-                            <ul>
-                                <li><a href="/">Каталог</a></li>
-                                <li><a href="#">Навигация</a></li>
-                                <li><a href="#">Новинки</a></li>
-                                <li><a href="#">Бестселлеры</a></li>
-                                <li><a href="#">Наши авторы</a></li>
-                                <li><a href="#">Предзаказы</a></li>
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Авторам</a></li>
-                                <li><a href="#">СМИ и реклама</a></li>
+                        <nav class="header__menu">
+                            <ul class="menu">
+                                <li><a class= "menu__item-link" href="/">Каталог</a></li>
+                                <li><a class= "menu__item-link" href="#">Навигация</a></li>
+                                <li><a class= "menu__item-link" href="#">Новинки</a></li>
+                                <li><a class= "menu__item-link" href="#">Бестселлеры</a></li>
+                                <li><a class= "menu__item-link" href="#">Наши авторы</a></li>
+                                <li><a class= "menu__item-link" href="#">Предзаказы</a></li>
+                                <li><a class= "menu__item-link" href="#">О нас</a></li>
+                                <li><a class= "menu__item-link" href="#">Авторам</a></li>
+                                <li><a class= "menu__item-link" href="#">СМИ и реклама</a></li>
                             </ul>
                         </nav>
                         <!--/ Навигация -->
         </header>
     <!--/ Заголовок -->
     <!-- Основной контент -->
-    <main>
+    <main class="main">
         <!-- Первый экран -->
-        <section>
-            <div>
-                <h2>ДОБРО ПОЖАЛОВАТЬ!</h2>
+        <section class="section__welcome">
+            <div class="welcome__container">
+                <h2 class="nov__title">ДОБРО ПОЖАЛОВАТЬ!</h2>
                 <button type="button">Подробнее</button>
              </div>
-            <img src="images/AQdplwG5PHc.jpg" alt="Бестселлеры" width="799" height="380">
+            <img class="welcome__icon" src="images/AQdplwG5PHc.jpg" alt="Бестселлеры" width="799" height="380">
         </section>
         <!--/ Первый экран -->
 
-        <section>
-            <h2>Новинки</h2>
-            <ul>
-                <li>
-                    <img src="images/photo_5348239722935345717_y.jpg" alt="Фото обложки" width="180" height="240">
-                    <h3>Modern divination</h3>
-                    <span>1500 ₽</span>
+        <section class="section__nov">
+            <h2 class="section__title">Новинки</h2>
+            <ul class="nov__list">
+                <li class="nov__item">
+                    <img class="nov__icon" src="images/photo_5348239722935345717_y.jpg" alt="Фото обложки" width="180" height="240">
+                    <h3 class="nov__title">Modern divination</h3>
+                    <span class="nov__description">1500 ₽</span>
                 </li>
                 <li>
-                    <img src="images/photo_5348239722935345724_y.JPG" alt="Фото обложки" width="180" height="240">
-                    <h3>История, которую нельзя рассказывать</h3>
-                    <span>250 ₽</span>
+                    <img class="nov__icon" src="images/photo_5348239722935345724_y.JPG" alt="Фото обложки" width="180" height="240">
+                    <h3 class="nov__title">История, которую нельзя рассказывать</h3>
+                    <span class="nov__description">250 ₽</span>
                 </li>
                 <li>
-                    <img src="images/photo_5348239722935345725_y.JPG" alt="Фото обложки" width="180" height="240">
-                    <h3>The bass rock</h3>
-                    <span>1500 ₽</span>
+                    <img class="nov__icon" src="images/photo_5348239722935345725_y.JPG" alt="Фото обложки" width="180" height="240">
+                    <h3 class="nov__title">The bass rock</h3>
+                    <span class="nov__description">1500 ₽</span>
                 </li>
                 <li>
-                    <img src="images/photo_5348239722935345720_y.JPG" alt="Фото обложки" width="180" height="240">
-                    <h3>Пятый мир</h3>
-                    <span>350 ₽</span>
-                </li>
-            </ul>
-        </section>
-                
-        <section>
-            <h2>Бестселлеры</h2>
-            <ul>
-                <li>
-                    <img src="images/гипотеза любви.jpg" alt="Фото обложки" width="180" height="240">
-                    <h3>Гипотеза любви</h3>
-                    <span>350 ₽</span>
-                </li>
-                <li>
-                    <img src="images//женщины.jpg" alt="Фото обложки" width="180" height="240">
-                    <h3>Маленькие женщины</h3>
-                    <span>350 ₽</span>
-                </li>
-                <li>
-                    <img src="images/звонцова.jpg" alt="Фото обложки" width="180" height="240">
-                    <h3>Серебряная клятва</h3>
-                    <span>350 ₽</span>
-                </li>
-                <li>
-                    <img src="images/нора.jpg" alt="Фото обложки" width="180" height="240">
-                    <h3>Лисья нора</h3>
-                    <span>350 ₽</span>
+                    <img class="nov__icon" src="images/photo_5348239722935345720_y.JPG" alt="Фото обложки" width="180" height="240">
+                    <h3 class="nov__title">Пятый мир</h3>
+                    <span class="nov__description">350 ₽</span>
                 </li>
             </ul>
         </section>
                 
-        <section>
-            <h2>Новости и акции</h2>
-            <ul>
-                <li>
-                    <img src="images/Rectangle 14.png" alt="Фото обложки" width="360" height="200">
+        <section class="section__best">
+            <h2 class="section__title">Бестселлеры</h2>
+            <ul class="best__list">
+                <li class="best__item">
+                    <img class="best__icon" src="images/гипотеза любви.jpg" alt="Фото обложки" width="180" height="240">
+                    <h3 class="best__title">Гипотеза любви</h3>
+                    <span class="best__description">350 ₽</span>
                 </li>
                 <li>
-                    <img src="images/Rectangle 14.png" alt="Фото обложки" width="360" height="200">
+                    <img class="best__icon" src="images//женщины.jpg" alt="Фото обложки" width="180" height="240">
+                    <h3 class="best__title">Маленькие женщины</h3>
+                    <span class="best__description">350 ₽</span>
+                </li>
+                <li>
+                    <img class="best__icon" src="images/звонцова.jpg" alt="Фото обложки" width="180" height="240">
+                    <h3 class="best__title">Серебряная клятва</h3>
+                    <span class="best__description">350 ₽</span>
+                </li>
+                <li>
+                    <img class="best__icon" src="images/нора.jpg" alt="Фото обложки" width="180" height="240">
+                    <h3 class="best__title">Лисья нора</h3>
+                    <span class="best__description">350 ₽</span>
+                </li>
+            </ul>
+        </section>
+                
+        <section class="section__news">
+            <h2 class="section__title">Новости и акции</h2>
+            <ul class="news__list">
+                <li class="news__item">
+                    <img class="news__icon" src="images/menyalnik.jpg" alt="Фото обложки" width="360" height="200">
+                </li>
+                <li class="news__list">
+                    <img class="news__icon" src="images/zvoncova.jpg" alt="Фото обложки" width="360" height="200">
                 </li>
             </ul>
          </section>
             </main>
         <footer class="footer">
-            <ul>
-                <li>
-                    <a href="#">Контактная информация</a>
-                    <a href="#">Карта сайта</a>
-                    <a href="#">Политика конфиденциальности</a>
-                    <h3>Сайт выполнен студентками второго курса - Тиминой Яной и Гусевой Ксенией</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class= "footer__item-link" href="#">Контактная информация</a>
+                    <a class= "footer__item-link" href="#">Карта сайта</a>
+                    <a class= "footer__item-link" href="#">Политика конфиденциальности</a>
+                    <h3 class="footer__title">Сайт выполнен студентками второго курса - Тиминой Яной и Гусевой Ксенией</h3>
                 </li>
             </ul>
         </footer>
 
+        <!--/ Форма "Войдите в профиль" -->        
+        <!-- Форма "Войти" -->
+        <section class="section popup">
+            <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
+                    height="24"></button>
+            <h2 class="popup__title">Войти</h2>
+            <form class="popup__form form" action="/" method="post">
+                <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                <fieldset class="form__buttons">
+                    <button class="button button--accent" type="submit">Войти</button>
+                    <button class="button" type="button">Отмена</button>
+                </fieldset>
+                <button class="button button--link" type="button">У меня еще нет аккаунта</button>
+            </form>
+        </section>
+        <!--/ Форма "Войти" -->
+    </div>
+    <!--/ Формы -->
 </body>
 </html>
