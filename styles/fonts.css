@@ -2,5 +2,6 @@
      font-family: 'Triodion Unicode'; 
           font-weight: 700;
            font-display: swap; 
+           color: #a04236;
            src: url("../fonts/TriodionUnicode.woff2") format('woff2');
  }

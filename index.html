@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +9,22 @@
 </head>
 <body>
         <!-- ТУМАН -->
-        <header class="header">
+        <header class="header container">
             <!-- Логотип -->
-            <a class="header__link" href="#"><img class="header__logo" src="images/Picsart_24-11-27_12-16-13-519.png" alt="Фото лого" width="350" height="250"></a>
+            <a class="header__logo" href="#"><img class="header__logo" src="images/Picsart_24-11-27_12-16-13-519.png" alt="Фото лого" width="250" height="150"></a>
             <!--/ Логотип -->
-         <section class="section search">
-                <h2 class="title section__title">Поиск книг</h2>
+         <section class="menu section search">
                 <form class="search__form form" action="/" method="get">
                     <input class="search__form-name form__field" type="search" name="text" placeholder="Название книги">
                     <button class="search__form-submit button button--accent" type="submit">Поиск</button>
                 </form>
             </section>
 
-            <button class="header__button" type="button">
-                <img src="images/рег.png" alt="Регистрация" width="16" height="16"> Регистрация
+            <div class="header__buttons">
+                <button class="header__button-add button button--accent" type="button">Регистрация</button>
+                <button class="header__button-add button button--accent" type="button">Войти</button>
+            </div>
+
             </button>
                     <!-- Навигация -->
                         <nav class="header__menu">
@@ -39,42 +41,46 @@
                             </ul>
                         </nav>
                         <!--/ Навигация -->
+            </button>
         </header>
     <!--/ Заголовок -->
     <!-- Основной контент -->
-    <main class="main">
+    <main class="main container">
         <!-- Первый экран -->
         <section class="section__welcome">
-            <div class="welcome__container">
+            <div class="welcome__wrap-left">
                 <h2 class="title nov__title">ДОБРО ПОЖАЛОВАТЬ!</h2>
-                <button type="button">Подробнее</button>
-             </div>
-            <img class="welcome__icon" src="images/AQdplwG5PHc.jpg" alt="Бестселлеры" width="799" height="380">
+                <button class="main__button-add button button--accent" type="button">Подробнее</button>
+            </div>
+            <div class="welcome__wrap-right">
+                <img class="welcome__image" src="images/AQdplwG5PHc.jpg" alt="Бестселлеры" width="799" height="380">
+            </div>
+
         </section>
         <!--/ Первый экран -->
 
         <section class="section__nov">
             <h2 class="title section__title">Новинки</h2>
-            <ul class="nov__list">
+            <ul class="nov__card">
                 <li class="nov__item">
                     <img class="nov__icon" src="images/photo_5348239722935345717_y.jpg" alt="Фото обложки" width="180" height="240">
-                    <h3 class="nov__title">Modern divination</h3>
-                    <span class="nov__description">1500 ₽</span>
+                    <h3 class="nov__name">Modern divination</h3>
+                    <span class="nov__money">1500 ₽</span>
                 </li>
                 <li>
                     <img class="nov__icon" src="images/photo_5348239722935345724_y.JPG" alt="Фото обложки" width="180" height="240">
-                    <h3 class="nov__title">История, которую нельзя рассказывать</h3>
-                    <span class="nov__description">250 ₽</span>
+                    <h3 class="nov__name">История, которую нельзя рассказывать</h3>
+                    <span class="nov__money">250 ₽</span>
                 </li>
                 <li>
                     <img class="nov__icon" src="images/photo_5348239722935345725_y.JPG" alt="Фото обложки" width="180" height="240">
-                    <h3 class="nov__title">The bass rock</h3>
-                    <span class="nov__description">1500 ₽</span>
+                    <h3 class="nov__name">The bass rock</h3>
+                    <span class="nov__money">1500 ₽</span>
                 </li>
                 <li>
                     <img class="nov__icon" src="images/photo_5348239722935345720_y.JPG" alt="Фото обложки" width="180" height="240">
-                    <h3 class="nov__title">Пятый мир</h3>
-                    <span class="nov__description">350 ₽</span>
+                    <h3 class="nov__name">Пятый мир</h3>
+                    <span class="nov__money">350 ₽</span>
                 </li>
             </ul>
         </section>
@@ -117,7 +123,7 @@
             </ul>
          </section>
             </main>
-        <footer class="footer">
+        <footer class="footer container">
             <ul class="footer__list">
                 <li class="footer__item">
                     <a class= "footer__item-link" href="#">Контактная информация</a>
