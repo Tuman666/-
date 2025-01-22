@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- <link rel="stylesheet" href="./styles/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
 </head>
+
 <body>
-        <!-- ТУМАН -->
-        <header class="header container">
-            <!-- Логотип -->
-            <a class="header__logo" href="#"><img class="header__logo" src="images/Picsart_24-11-27_12-16-13-519.png" alt="Фото лого" width="250" height="150"></a>
-            <!--/ Логотип -->
-         <section class="menu section search">
-                <form class="search__form form" action="/" method="get">
-                    <input class="search__form-name form__field" type="search" name="text" placeholder="Название книги">
-                    <button class="search__form-submit button button--accent" type="submit">Поиск</button>
-                </form>
-            </section>
+    <!-- ТУМАН -->
+    <header class="header container">
+        <!-- Логотип -->
+        <a class="header__logo" href="#">
+            <img class="header__logo" src="images/Picsart_24-11-27_12-16-13-519.png" alt="Фото лого" width="250"
+                height="150"></a>
+        <!--/ Логотип -->
 
-            <div class="header__buttons">
-                <button class="header__button-add button button--accent" type="button">Регистрация</button>
-                <button class="header__button-add button button--accent" type="button">Войти</button>
-            </div>
+        <div class="search">
+            <form class="search__form form" action="/" method="get">
+                <input class="form__name form__field" type="search" name="text" placeholder="Название книги">
+                <button class="form__submit button button--accent" type="submit">Поиск</button>
+            </form>
+        </div>
 
-            </button>
-                    <!-- Навигация -->
-                        <nav class="header__menu">
-                            <ul class="menu">
-                                <li><a class= "menu__item-link" href="/">Каталог</a></li>
-                                <li><a class= "menu__item-link" href="#">Навигация</a></li>
-                                <li><a class= "menu__item-link" href="#">Новинки</a></li>
-                                <li><a class= "menu__item-link" href="#">Бестселлеры</a></li>
-                                <li><a class= "menu__item-link" href="#">Наши авторы</a></li>
-                                <li><a class= "menu__item-link" href="#">Предзаказы</a></li>
-                                <li><a class= "menu__item-link" href="#">О нас</a></li>
-                                <li><a class= "menu__item-link" href="#">Авторам</a></li>
-                                <li><a class= "menu__item-link" href="#">СМИ и реклама</a></li>
-                            </ul>
-                        </nav>
-                        <!--/ Навигация -->
-            </button>
-        </header>
+
+
+        <div class="header__buttons">
+            <button class="header__button-add button button--accent" type="button">Регистрация</button>
+            <button class="header__button-add button button--accent" type="button">Войти</button>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li><a class="menu__item" href="/">Каталог</a></li>
+                <li><a class="menu__item" href="#">Навигация</a></li>
+                <li><a class="menu__item" href="#">Новинки</a></li>
+                <li><a class="menu__item" href="#">Бестселлеры</a></li>
+                <li><a class="menu__item" href="#">Наши авторы</a></li>
+                <li><a class="menu__item" href="#">Предзаказы</a></li>
+                <li><a class="menu__item" href="#">О нас</a></li>
+                <li><a class="menu__item" href="#">Авторам</a></li>
+                <li><a class="menu__item" href="#">СМИ и реклама</a></li>
+            </ul>
+        </nav>
+        <!--/ Навигация -->
+    </header>
     <!--/ Заголовок -->
     <!-- Основной контент -->
     <main class="main container">
         <!-- Первый экран -->
-        <section class="section__welcome">
+        <section class="welcome">
             <div class="welcome__wrap-left">
-                <h2 class="title nov__title">ДОБРО ПОЖАЛОВАТЬ!</h2>
-                <button class="main__button-add button button--accent" type="button">Подробнее</button>
+                <h2 class="title welcome__title">ДОБРО ПОЖАЛОВАТЬ!</h2>
+                <a href="#" class="welcome__link">Подробнее</a>
             </div>
             <div class="welcome__wrap-right">
                 <img class="welcome__image" src="images/AQdplwG5PHc.jpg" alt="Бестселлеры" width="799" height="380">
@@ -59,60 +64,64 @@
         </section>
         <!--/ Первый экран -->
 
-        <section class="section__nov">
-            <h2 class="title section__title">Новинки</h2>
-            <ul class="nov__card">
-                <li class="nov__item">
-                    <img class="nov__icon" src="images/photo_5348239722935345717_y.jpg" alt="Фото обложки" width="180" height="240">
-                    <h3 class="nov__name">Modern divination</h3>
-                    <span class="nov__money">1500 ₽</span>
+        <section class="new">
+            <h2 class="title new__title">Новинки</h2>
+            <ul class="new__card">
+                <li class="new__item">
+                    <img class="new__icon" src="images/photo_5348239722935345717_y.jpg" alt="Фото обложки" width="180"
+                        height="240">
+                    <h3 class="new__name">Modern divination</h3>
+                    <span class="new__money">1500 ₽</span>
                 </li>
                 <li>
-                    <img class="nov__icon" src="images/photo_5348239722935345724_y.JPG" alt="Фото обложки" width="180" height="240">
-                    <h3 class="nov__name">История, которую нельзя рассказывать</h3>
-                    <span class="nov__money">250 ₽</span>
+                    <img class="new__icon" src="images/photo_5348239722935345724_y.JPG" alt="Фото обложки" width="180"
+                        height="240">
+                    <h3 class="new__name">История, которую нельзя рассказывать</h3>
+                    <span class="new__money">250 ₽</span>
                 </li>
                 <li>
-                    <img class="nov__icon" src="images/photo_5348239722935345725_y.JPG" alt="Фото обложки" width="180" height="240">
-                    <h3 class="nov__name">The bass rock</h3>
-                    <span class="nov__money">1500 ₽</span>
+                    <img class="new__icon" src="images/photo_5348239722935345725_y.JPG" alt="Фото обложки" width="180"
+                        height="240">
+                    <h3 class="new__name">The bass rock</h3>
+                    <span class="new__money">1500 ₽</span>
                 </li>
                 <li>
-                    <img class="nov__icon" src="images/photo_5348239722935345720_y.JPG" alt="Фото обложки" width="180" height="240">
-                    <h3 class="nov__name">Пятый мир</h3>
-                    <span class="nov__money">350 ₽</span>
+                    <img class="new__icon" src="images/photo_5348239722935345720_y.JPG" alt="Фото обложки" width="180"
+                        height="240">
+                    <h3 class="new__name">Пятый мир</h3>
+                    <span class="new__money">350 ₽</span>
                 </li>
             </ul>
         </section>
-                
-        <section class="section__best">
-            <h2 class="title section__title">Бестселлеры</h2>
+
+        <section class="best">
+            <h2 class="title best__title">Бестселлеры</h2>
             <ul class="best__list">
                 <li class="best__item">
-                    <img class="best__icon" src="images/гипотеза любви.jpg" alt="Фото обложки" width="180" height="240">
+                    <img class="best__icon" src="images/gl.jpg" alt="Фото обложки" width="180" height="240">
                     <h3 class="best__title">Гипотеза любви</h3>
-                    <span class="best__description">350 ₽</span>
+                    <span class="best__money">350 ₽</span>
                 </li>
                 <li>
-                    <img class="best__icon" src="images//женщины.jpg" alt="Фото обложки" width="180" height="240">
+                    <img class="best__icon" src="images/w.jpg" alt="Фото обложки" width="180" height="240">
                     <h3 class="best__title">Маленькие женщины</h3>
-                    <span class="best__description">350 ₽</span>
+                    <span class="best__money">350 ₽</span>
                 </li>
                 <li>
-                    <img class="best__icon" src="images/звонцова.jpg" alt="Фото обложки" width="180" height="240">
+                    <img class="best__icon" src="images/z.jpg" alt="Фото обложки" width="180" height="240">
                     <h3 class="best__title">Серебряная клятва</h3>
-                    <span class="best__description">350 ₽</span>
+                    <span class="best__money">350 ₽</span>
                 </li>
                 <li>
-                    <img class="best__icon" src="images/нора.jpg" alt="Фото обложки" width="180" height="240">
+                    <img class="best__icon" src="images/n.jpg" alt="Фото обложки" width="180" height="240">
                     <h3 class="best__title">Лисья нора</h3>
-                    <span class="best__description">350 ₽</span>
+                    <span class="best__money">350 ₽</span>
                 </li>
             </ul>
         </section>
-                
-        <section class="section__news">
-            <h2 class="title section__title">Новости и акции</h2>
+
+        <section class="news">
+            <h2 class="title news__title">Новости и акции</h2>
             <ul class="news__list">
                 <li class="news__item">
                     <img class="news__icon" src="images/menyalnik.jpg" alt="Фото обложки" width="360" height="200">
@@ -121,21 +130,20 @@
                     <img class="news__icon" src="images/zvoncova.jpg" alt="Фото обложки" width="360" height="200">
                 </li>
             </ul>
-         </section>
-            </main>
-        <footer class="footer container">
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <a class= "footer__item-link" href="#">Контактная информация</a>
-                    <a class= "footer__item-link" href="#">Карта сайта</a>
-                    <a class= "footer__item-link" href="#">Политика конфиденциальности</a>
-                    <h3 class="footer__title">Сайт выполнен студентками второго курса - Тиминой Яной и Гусевой Ксенией</h3>
-                </li>
-            </ul>
-        </footer>
-
+        </section>
+    </main>
     
-        <!-- Формы -->
+    <footer class="footer container">
+        <ul class="footer__list">
+            <li class="footer__item"><a class="footer__item-link" href="#">Контактная информация</a></li>
+            <li><a class="footer__item-link" href="#">Карта сайта</a></li>
+            <li><a class="footer__item-link" href="#">Политика конфиденциальности</a></li>
+        </ul>
+        <h3 class="footer__title">Сайт выполнен студентками второго курса - Тиминой Яной и Гусевой Ксенией</h3>
+    </footer>
+
+
+    <!-- Формы -->
     <div>
         <!-- Форма "Войдите в профиль" -->
         <section>
@@ -187,4 +195,5 @@
     </div>
     <!--/ Формы -->
 </body>
+
 </html>
