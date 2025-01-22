@@ -5,32 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./styles/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
     <!-- ТУМАН -->
     <header class="header container">
-        <!-- Логотип -->
-        <a class="header__logo" href="#">
-            <img class="header__logo" src="images/Picsart_24-11-27_12-16-13-519.png" alt="Фото лого" width="250"
-                height="150"></a>
-        <!--/ Логотип -->
+        <div class="wrapper">
+            <!-- Логотип -->
+            <a class="header__logo" href="#">
+                <img class="header__logo" src="images/Picsart_24-11-27_12-16-13-519.png" alt="Фото лого" width="250"
+                    height="150"></a>
+            <!--/ Логотип -->
 
-        <div class="search">
-            <form class="search__form form" action="/" method="get">
-                <input class="form__name form__field" type="search" name="text" placeholder="Название книги">
-                <button class="form__submit button button--accent" type="submit">Поиск</button>
-            </form>
+            <div class="search">
+                <form class="search__form form" action="/" method="get">
+                    <input class="form__name form__field" type="search" name="text" placeholder="Название книги">
+                    <button class="form__submit button button--accent" type="submit">Поиск</button>
+                </form>
+            </div>
+
+
+
+            <div class="header__buttons">
+                <button class="header__button-add button button--accent" type="button">Регистрация</button>
+                <button class="header__button-add button button--accent" type="button">Войти</button>
+            </div>
         </div>
 
-
-
-        <div class="header__buttons">
-            <button class="header__button-add button button--accent" type="button">Регистрация</button>
-            <button class="header__button-add button button--accent" type="button">Войти</button>
-        </div>
 
         <!-- Навигация -->
         <nav class="header__menu">

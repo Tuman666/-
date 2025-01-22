@@ -1,6 +1,6 @@
 /* Контейнер-обертка */
 .container {
-    max-width: 1100px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@
     font-size: 16px;
     font-weight: 600;
 
-    background-color: #800080;
+    background-color: #4f9db4;
     color: #fefeff;
 
     border: 0;
@@ -33,7 +33,7 @@
 .button--accent {
     color: #ffffff;
     
-    background-color: #800080;
+    background-color: #2a8a91;
 }
 
 .button--link {

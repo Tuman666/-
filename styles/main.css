@@ -1,7 +1,4 @@
-.main{
-    display: flex;
-    gap: 10px;
-   }
+
    .about__wrap-right{
     width: 500px;
     flex-shrink: 0;
@@ -69,5 +66,10 @@
     width: 100%;
     height: 300px;
     object-fit: cover;
+   }
+
+   .news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
    }
    
