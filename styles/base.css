@@ -54,3 +54,19 @@ overflow: hidden;
     cursor: pointer;
     
 }
+
+.best__item {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.best__item:hover {
+    transform: scale(1.2);
+}
+
+.new__item {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.new__item:hover {
+    transform: scale(1.2);
+}

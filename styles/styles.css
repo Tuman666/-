@@ -10,3 +10,5 @@
 @import "main.css";
 /* Подключение стилей относящихся к body */
 @import "typography.css";
+/* Подключение анимаций */
+@import "animation.css";
