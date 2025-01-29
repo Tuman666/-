@@ -29,6 +29,10 @@
     cursor: pointer;
     
 }
+ .button:hover{
+   opacity: 0.8; 
+   background-color: #1e4855;
+ }
 
 .button--accent {
     color: #ffffff;

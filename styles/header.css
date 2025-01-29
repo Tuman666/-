@@ -15,6 +15,16 @@
     flex-wrap: wrap;
     list-style-type: none;
    }
+
+.footer__list {
+    margin: 0;
+    padding: 10;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
 /* 
 .form__name{
     padding: 10px;

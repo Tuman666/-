@@ -5,71 +5,48 @@
 }  
 
 .main{
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(213, 226, 236);
      color: rgb(9, 45, 56);
      padding: 10px;
     }
 
-.nov__card{
-        width: 350px;
-        padding: 15px;
-        background-color: aliceblue;
-       color: black;
-        box-shadow: 1px 2px 20px 5px #d7d7d7;
-}
 
-.nov__name{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-   }
-   .nov__money{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 14px;
-    font-style: italic;
-}
-
-.nov__desc{
-    margin-top: 0;
-    margin-bottom: 15px;
-   }
-   .nov__link{
-    display: block;
-    padding: 10px;
-    background-color: rgb(62, 120, 167);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-align: center;
-}
-
-.nov__card {
-    margin: 0;
-    padding: 20px 0;
+.new__card{
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: nowrap;
+   }
+
+.new__item{
     list-style-type: none;
-}
 
-.nov__card{
+   }
+
+.new__image{
+
+   }
+ 
+.best__card{
     display: flex;
-    flex-direction: column;
-   }
-   .nov__link{
-    margin-top: auto;
-   }
-
-   .nov__image{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: nowrap;
    }
 
-   .news {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.best__item{
+    list-style-type: none;
+
    }
-   
+
+.news__card{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: nowrap;
+   }
+
+.news__item{
+    list-style-type: none;
+
+   }
