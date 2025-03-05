@@ -5,7 +5,7 @@
 }
 html,
 body {
-/* font-family: 'Arial', sans-serif; */
+font-family: 'souvenir', sans-serif;
 font-size: 18px;
 line-height: 30px;
 color: #000000;
@@ -40,27 +40,13 @@ overflow: hidden;
     margin-right: auto;
 }
 
-.button {
-    font-size: 16px;
-    font-weight: 600;
-
-    background-color: #53556d;
-    color: #fefeff;
-
-    border: 0;
-    border-radius: 8px;
-    padding: 12px 18px;
-
-    cursor: pointer;
-    
-}
 
 .best__item {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .best__item:hover {
-    transform: scale(1.2);
+    transform: scale(1.08);
 }
 
 .new__item {
@@ -68,5 +54,7 @@ overflow: hidden;
 }
 
 .new__item:hover {
-    transform: scale(1.2);
+    transform: scale(1.08);
 }
+
+

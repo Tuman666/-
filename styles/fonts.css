@@ -5,3 +5,11 @@
            color: #a04236;
            src: url("../fonts/TriodionUnicode.woff2") format('woff2');
  }
+
+ @font-face {
+     font-family: 'souvenir'; 
+          font-weight: 700;
+           font-display: swap; 
+           color: #a04236;
+           src: url("../fonts/souvenir.woff2") format('woff2');
+ }

@@ -14,6 +14,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     list-style-type: none;
+    background-color: rgb(109, 167, 172);
+    padding: 10px;
    }
 
 .footer__list {
@@ -23,14 +25,38 @@
     justify-content: space-between;
     flex-wrap: wrap;
     list-style-type: none;
+
+}
+.header__link {
+    text-decoration: none;
+    color: #000000;
 }
 
-/* 
+.header__link:hover {
+    background-color: #a0d3c7;
+} 
+
+.footer__item-link {
+    text-decoration: none;
+    color: #000000;
+}
+
 .form__name{
+    padding: 10px;
+    font-size: 100px;
+}
+
+.new__name {
     padding: 10px;
     font-size: 20px;
 }
 
+.welcome__link {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* 
 .search__form-submit button {
     padding: 5px;
     margin: 5px;

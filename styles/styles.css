@@ -12,3 +12,6 @@
 @import "typography.css";
 /* Подключение анимаций */
 @import "animation.css";
+@import "media.css";
+
+

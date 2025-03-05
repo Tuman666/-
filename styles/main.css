@@ -1,52 +1,49 @@
-
-   .about__wrap-right{
+.about__wrap-right {
     width: 500px;
     flex-shrink: 0;
-}  
+}
 
-.main{
+.main {
     background-color: rgb(213, 226, 236);
-     color: rgb(9, 45, 56);
-     padding: 10px;
-    }
+    color: rgb(9, 45, 56);
+    padding: 10px;
+}
 
 
-.new__card{
+.new__card {
     display: flex;
     justify-content: space-between;
     gap: 10px;
     flex-wrap: nowrap;
-   }
+    
+}
 
-.new__item{
+.new__item {
     list-style-type: none;
+width: 300px;
+}
 
-   }
 
-.new__image{
-
-   }
- 
-.best__card{
+.best__card {
     display: flex;
     justify-content: space-between;
     gap: 10px;
     flex-wrap: nowrap;
-   }
+}
 
-.best__item{
+.best__item {
     list-style-type: none;
 
-   }
+}
 
-.news__card{
+.news__card {
     display: flex;
     justify-content: space-between;
     gap: 10px;
     flex-wrap: nowrap;
-   }
+}
 
-.news__item{
+.news__item {
     list-style-type: none;
 
-   }
+}
