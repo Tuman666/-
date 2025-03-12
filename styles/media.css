@@ -1,25 +1,31 @@
 @media only screen and (max-width: 1024px) {
+
     /*тут обращение к классам*/
     .container {
         max-width: 100%;
-       }
-       .new__card{
-        flex-wrap: wrap;
-       }
-       .new__icon {
-        width: 350px;
-       }
-       .new__item {
-    width: 350px;
     }
 
-    .best__card{
+    .new__card {
         flex-wrap: wrap;
-       }
-       .best__icon {
+    }
+
+    .new__icon {
         width: 350px;
-       }
-       .best__item {
-    width: 350px;
     }
+
+    .new__item {
+        width: 350px;
     }
+
+    .best__card {
+        flex-wrap: wrap;
+    }
+
+    .best__icon {
+        width: 350px;
+    }
+
+    .best__item {
+        width: 350px;
+    }
+}

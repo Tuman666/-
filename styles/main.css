@@ -38,12 +38,13 @@ width: 300px;
 
 .news__card {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 10px;
     flex-wrap: nowrap;
 }
 
 .news__item {
     list-style-type: none;
-
+    max-width: 300px;
 }
+
