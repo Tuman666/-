@@ -1,0 +1,60 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+html,
+body {
+font-family: 'souvenir', sans-serif;
+font-size: 18px;
+line-height: 30px;
+color: #000000;
+background-color: #ffffff;
+overflow-x: hidden;
+}
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+.title{
+    font-family: 'Triodion Unicode';
+}
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+padding: 0;
+white-space: nowrap;
+border: 0;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+.container{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.best__item {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.best__item:hover {
+    transform: scale(1.08);
+}
+
+.new__item {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.new__item:hover {
+    transform: scale(1.08);
+}
+
+
