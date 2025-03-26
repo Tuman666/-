@@ -18,6 +18,13 @@
     
 }
 
+.welcome__wrap-right{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
 .new__item {
     list-style-type: none;
 width: 300px;
@@ -47,4 +54,28 @@ width: 300px;
     list-style-type: none;
     max-width: 300px;
 }
+.news__description{
+    margin-bottom: 20px;
+}
+.news__icon{
+    margin-bottom: 20px;
+}
+.dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
+    width: 70%;
+    height: 70%;
+
+    background-color: rgba(58, 60, 65, 0.75);
+}
+.registration{
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+}
