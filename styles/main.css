@@ -66,12 +66,21 @@ width: 300px;
     left: 0;
     z-index: 1;
 
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
 
     background-color: rgba(58, 60, 65, 0.75);
 }
 .registration{
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.login{
     position: absolute;
     width: 800px;
     left: 50%;

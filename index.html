@@ -30,7 +30,7 @@
 
             <div class="header__buttons">
                 <button class="header__button-add header__registration" type="button">Регистрация</button>
-                <button class="header__button-add " type="button">Войти</button>
+                <button class="header__button-add header__login" type="button">Войти</button>
             </div>
         </div>
 
@@ -77,25 +77,25 @@
                 <li class="new__item">
                     <img class="new__icon" src="images/photo_5348239722935345717_y.jpg" alt="Фото обложки" width="180"
                         height="240">
-                    <h3 class="new__name">Modern divination</h3>
+                    <h3 class="new__name">Книга 1</h3>
                     <span class="new__money">1500 ₽</span>
                 </li>
                 <li class="new__item">
                     <img class="new__icon" src="images/photo_5348239722935345724_y.JPG" alt="Фото обложки" width="180"
                         height="240">
-                    <h3 class="new__name">История, которую нельзя рассказывать</h3>
+                    <h3 class="new__name">Книга 2</h3>
                     <span class="new__money">250 ₽</span>
                 </li>
                 <li class="new__item">
                     <img class="new__icon" src="images/photo_5348239722935345725_y.JPG" alt="Фото обложки" width="180"
                         height="240">
-                    <h3 class="new__name">The bass rock</h3>
+                    <h3 class="new__name">Книга 3</h3>
                     <span class="new__money">1500 ₽</span>
                 </li>
                 <li class="new__item">
                     <img class="new__icon" src="images/photo_5348239722935345720_y.JPG" alt="Фото обложки" width="180"
                         height="240">
-                    <h3 class="new__name">Пятый мир</h3>
+                    <h3 class="new__name">Книга 4</h3>
                     <span class="new__money">350 ₽</span>
                 </li>
             </ul>
@@ -131,20 +131,20 @@
             <h2 class="title news__title">Новости и акции</h2>
             <ul class="news__card">
                 <li class="news__item">
-                    <img class="news__icon" src="images/menyalnik.jpg" alt="Фото обложки" width="400" height="300">                   
+                    <img class="news__icon" src="images/menyalnik.jpg" alt="Фото обложки" width="400" height="300">
                     <div class="news__description" hidden>
-                    Меняльник! Наше традиционное мероприятие по мотивам книги "Дом в котором"
-                </div>
-                   <a class="news__button button" href="#"> Подробнее</a>
+                        Меняльник! Наше традиционное мероприятие по мотивам книги "Дом в котором"
+                    </div>
+                    <a class="news__button button" href="#"> Подробнее</a>
 
                 </li>
                 <li class="news__card">
-                    <li class="news__item">
+                <li class="news__item">
                     <img class="news__icon" src="images/zvoncova.jpg" alt="Фото обложки" width="360" height="200">
                     <div class="news__description" hidden>
-                         Презентация книги "Город с львиным сердцем" Екатерины Звонцовой!
-                        </div>
-                       <a class="news__button button" href="#"> Подробнее</a>                     
+                        Презентация книги "Город с львиным сердцем" Екатерины Звонцовой!
+                    </div>
+                    <a class="news__button button" href="#"> Подробнее</a>
                 </li>
             </ul>
         </section>
@@ -161,7 +161,7 @@
 
 
     <!-- Формы -->
-    <div class="dialog dialog--layout">
+    <div class="dialog dialog--layout" hidden>
         <!-- Форма "Войдите в профиль" -->
         <!--/ Форма "Войдите в профиль" -->
         <!-- Форма "Регистрация" -->
@@ -189,8 +189,8 @@
         </section>
         <!--/ Форма "Регистрация" -->
         <!-- Форма "Войти" -->
-        <section class="section popup" hidden>
-            <button class="popup__close" type="button"><img src="images/Krestik.png" alt="Закрыть окно" width="24"
+        <section class="popup login" hidden>
+            <button class="popup__end" type="button"><img src="images/Krestik.png" alt="Закрыть окно" width="24"
                     height="24"></button>
             <h2 class="popup__title">Войти</h2>
             <form class="popup__form form" action="/" method="post">
@@ -205,8 +205,9 @@
         </section>
         <!--/ Форма "Войти" -->
     </div>
+
     <!--/ Формы -->
-        <script src="scripts/scripts.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>
