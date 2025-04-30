@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // newsIcon.addEventListener("mouseenter", () =>{
   //     console.log ('наведение мышки на изображение');
   // })
-
+  //3.2 Появление описания изображения
   newsIcon.forEach((icon, index) => {
     const newsText = document.querySelectorAll('.news__description');
     icon.addEventListener('mouseover', () => {
@@ -33,22 +33,17 @@ document.addEventListener("DOMContentLoaded", () => {
       newsText[index].setAttribute('hidden', true);
     });
   });
-
-  //Объявляем переменную welcоmeButtonModal и сохраняем в нее кнопку c классом header__buttons
+  //3.3 Появление модальной формы регистрации и входа
   const registrationButtonModal = document.querySelector(".header__registration");
   const loginButtonModal = document.querySelector(".header__login");
 
-  //объявляем переменную modalApplication и сохраняем в нее модальное окно, которое хотим увидеть
   const modalApplication = document.querySelector(".dialog");
   const registrationModal = document.querySelector(".registration");
   const loginModal = document.querySelector(".login");
 
-  //Если есть такая кнопка и модальное окно
   if (registrationButtonModal && modalApplication) {
     console.log('Окно регитрации');
-    //Для кнопки «Записаться на курс» добавляем обработчик события клика по этой кнопке:
     registrationButtonModal.addEventListener("click", () => {
-      // удаляем атрибут hidden у модального окна modalApplication и модальное окно становится видимым
       modalApplication.removeAttribute("hidden");
       registrationModal.removeAttribute("hidden");
 
@@ -56,65 +51,100 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (loginButtonModal && modalApplication) {
     console.log('Окно войти');
-    //Для кнопки «Записаться на курс» добавляем обработчик события клика по этой кнопке:
     loginButtonModal.addEventListener("click", () => {
-      // удаляем атрибут hidden у модального окна modalApplication и модальное окно становится видимым
       modalApplication.removeAttribute("hidden");
       loginModal.removeAttribute("hidden");
 
     });
   }
 
-  // добавляем обработчик события при клике вне области формы. Тогда каждый раз, когда пользователь кликает где-либо на фоне вокруг появившейся формы, будет вызываться функция,
   window.addEventListener("click", (event) => {
-    // проверяем, был ли клик на фоне модального окна
     if (event.target === modalApplication) {
-      //если условие выполняется, добавляем атрибут hidden у модального окна modalApplication и модальное окно становится невидимым
       modalApplication.setAttribute("hidden", true);
       registrationModal.setAttribute("hidden", true);
       loginModal.setAttribute("hidden", true);
     }
-    //Объявляем переменную closeModalButton и сохраняем в нее кнопку c классом application__button
-const closeModalButton = document.querySelector(".popup__close");
-const closeButton = document.querySelector(".popup__end");
-//Для кнопки «Закрыть» добавляем обработчик события клика по этой кнопке:
-closeModalButton.addEventListener("click", () => {
-// Добавляем атрибут hidden у модального окна modalApplication и модальное окно становится невидимым
-    modalApplication.setAttribute("hidden", true);
-});
-
-closeButton.addEventListener("click", () => {
-  // Добавляем атрибут hidden у модального окна modalApplication и модальное окно становится невидимым
+    const closeModalButton = document.querySelector(".popup__close");
+    const closeButton = document.querySelector(".popup__end");
+    closeModalButton.addEventListener("click", () => {
       modalApplication.setAttribute("hidden", true);
+    });
+
+    closeButton.addEventListener("click", () => {
+      modalApplication.setAttribute("hidden", true);
+    });
+
   });
+  //3.4.2	Формируем массив из частей определенных элементов название книги
+  const CardsContainer = document.querySelector(".new");
+  if (CardsContainer) {
+    const dataTitleBook = [
+      "Modern divination",
+      "История, которую нельзя рассказывать",
+      "The bass rock",
+      "Пятый мир",
+    ];
+    const titleCards = CardsContainer.querySelectorAll(".new__name");
+    titleCards.forEach((item, index) => {
+      item.textContent = dataTitleBook[index];
+    });
+  }
+  // 3.5. 
+  const cardsBest = document.querySelector('.best');
+  // Если такой элемент существует
+  if (cardsBest) {
+    //Объявляем переменную bestList и сохраняем в нее элемент с классом best__list, чтобы мы могли добавить новые элементы
+    const bestList = cardsBest.querySelector('.best__card');
+    //Создаем объект cardsBestData, которая содержит данные для четырёх карточек.
+    const cardsBestData = {
+      // каждая ссылка содержитicon (фото обложки), title (название книги), money (цена).
+      best1: {
+        icon: "images/gl.jpg",
+        title: '– Гипотеза любви –',
+        money: '350₽',
+      },
+      best2: {
+        icon: "images/w.jpg",
+        title: '– Маленькие женщины –',
+        money: '350₽',
+      },
+      best3: {
+        icon: "images/z.jpg",
+        title: '– Серебряная клятва –',
+        money: '350₽',
+      },
+      best4: {
+        icon: "images/n.jpg",
+        title: '– Лисья нора –',
+        money: '350₽',
+      }
+    }
+    //Создаем функцию createCard, которая будет добавлять карточку. Внутри функции 3 переменные: title (название книги), money (цена), icon (фото обложки).
+    const createCard = (icon, title, money) => {
+      // Создаем переменную  card, которая будет содержать HTML-код карточки и вставляем туда 3 переменные
+      const card = `
+  <li class="best__item">
+  <img class="best__icon" src="${icon}" alt="Фото обложки" width="180" height="240">
+      <p class="best__title">${title}</p>
+      <p class="best__money">${money}</p>
+  </li>
+`;
+      //  Возвращаем значение переменной card
+      return card;
+    }
+    // Создаем цикл for и проходим по всем элементам объекта cardsBestData.
+    for (const cardKey in cardsBestData) {
+      //Получаем данные одной карточки из объекта cardsBestData 
+      const card = cardsBestData[cardKey];
+      //создаем переменную cardElement и вызываем функцию createLink, куда передаем название, цену (то, из чего будет состоять ваша карточка).
+      const cardElement = createCard(card.icon,card.title, card.money);
+      // с помощью метода insertAdjacentHTML добавляем созданный HTML-код в конец списка bestList.
+      bestList.insertAdjacentHTML('beforeend', cardElement);
+    }
+  }
+
 
 });
-//3.4
-const CardsContainer = document.querySelector(".treners");
-
-//  проверяем существует ли элемент CardsContainer, если он существует то переходим далее
-    if (CardsContainer) {
-//далее создаем массив dataTitleTreners, который содержит строки с названиями книг.(здесь уже пишем те значения, которые надо подставить вместо слова Книга 1, Книга 2 и т.д)
-        const dataTitleTreners = [
-            "Modern divination",
-            "История, которую нельзя рассказывать",
-            "The bass rock",
-            "Пятый мир",
-        ];
-
-//Объявляем переменную titleCards и сохраняем в нее все элементы на странице с классом treners__subtitle (где должны стоять имена тренеров)
-        const titleCards =
-        CardsContainer.querySelectorAll(".new__subtitle");
-
-// Проходим по каждому элементу массива titleTreners с помощью цикла forEach. Внутри функции 2 переменные: item – текущий заголовок, а index — его индекс в массиве.
-         titleCards.forEach((item, index) => {
-
-//здесь обновляем значение текущего заголовка (textContent) на новое значение из массива dataTitleCards, используя индекс текущего заголовка.
-            item.textContent = dataTitleTreners[index];
-           });
-    }
-
-  });
 
 
 
