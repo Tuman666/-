@@ -1,0 +1,13 @@
+[
+    {
+        "imageUrl": "images/consert1.jpg",
+        "imageAlt": "Знакомство",
+        "imageWidth": 400
+    }, 
+        {
+        "imageUrl": "images/consert2.jpg",
+        "imageAlt": "Знакомство",
+        "imageWidth": 400
+
+    }
+]

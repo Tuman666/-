@@ -137,10 +137,65 @@ document.addEventListener("DOMContentLoaded", () => {
       //Получаем данные одной карточки из объекта cardsBestData 
       const card = cardsBestData[cardKey];
       //создаем переменную cardElement и вызываем функцию createLink, куда передаем название, цену (то, из чего будет состоять ваша карточка).
-      const cardElement = createCard(card.icon,card.title, card.money);
+      const cardElement = createCard(card.icon, card.title, card.money);
       // с помощью метода insertAdjacentHTML добавляем созданный HTML-код в конец списка bestList.
       bestList.insertAdjacentHTML('beforeend', cardElement);
     }
+  }
+
+  // 3.6.1
+  //Объявляем переменную cardsImages и сохраняем в нее элементы секции images
+  const cardsImages = document.querySelector(".images");
+  if (cardsImages) {
+    const cardListImages = cardsImages.querySelector(".images__list");
+    const apiUrl = "images.json";
+    const createCard = (imageUrl, imageAlt, imageWidth) => {
+      const image = `
+            <li class="images__item">
+                <img class="images__picture" src="${imageUrl}" alt="${imageAlt}" width="${imageWidth}">
+            </li>
+        `;
+      return image;
+    };
+
+    // Загрузка данных с сервера
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((images) => {
+        console.log(images); // Данные
+        console.log(typeof images); // Тип полученных данных
+
+        images.forEach((item) => {
+          const cardElement = createCard(
+            item.imageUrl,
+            item.imageAlt,
+            item.imageWidth
+          );
+          cardListImages.insertAdjacentHTML("beforeend", cardElement);
+        });
+      });
+  }
+
+  //3.6.2
+  //Объявляем переменную preloader и сохраняем в нее блок с классом .preloader
+  const preloader = document.querySelector(".preloader");
+  //Объявляем переменную content и сохраняем в нее блок с классом .content
+  const content = document.querySelector(".content");
+
+  //проверяем существуют ли эти блоки
+  if (preloader && content) {
+    // функция, которая позволяет выполнять код через определенный промежуток времени.
+    setTimeout(() => {
+      // Скрываем предзагрузчик
+      preloader.style.opacity = "0";
+      preloader.style.visibility = "hidden";
+
+      // и показываем контент
+      content.style.display = "block";
+
+      // Удаляем элемент предзагрузчика со страницы
+      preloader.remove();
+    }, 3000); // Задержка 3 секунды
   }
 
 

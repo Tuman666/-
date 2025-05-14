@@ -88,3 +88,13 @@ width: 300px;
     background-color: #fff;
     transform: translate(-50%, -50%);
 }
+
+.images__list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+        margin-right: 10px; 
+    margin-bottom: 10px;
+    gap: 60px;
+}
