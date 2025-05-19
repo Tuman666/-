@@ -198,6 +198,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000); // Задержка 3 секунды
   }
 
+//3.7 
+// объявляем переменную sliders,куда помещаем элемент с классом swiper
+const sliders = document.querySelector('.swiper');
+//проверяем существует ли элемент
+    if (sliders) {
+        const swiper1 = new Swiper(sliders, {
+          slidesPerView: 3,
+      spaceBetween: 30,
+            // Пагинация
+            pagination: {
+                el: '.swiper-pagination',
+                type: "fraction",
+            },
+
+            // Навигационные стрелки
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }
 
 });
 

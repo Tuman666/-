@@ -98,3 +98,34 @@ width: 300px;
     margin-bottom: 10px;
     gap: 60px;
 }
+.swiper-button-prev{
+    background-image: url("/images/strelka2.png");
+    width: 158px;
+height: 158px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+    left: -19px;
+    top: 139px;
+}
+.swiper-button-prev::after {
+display: none;
+}
+
+.swiper {
+    min-width: 800px;}
+
+.swiper-button-next {
+    background-image: url("/images/strelka.png");
+    width: 158px;
+height: 158px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+    left: 662px;
+    top: 139px;
+}
+
+.swiper-button-next::after {
+display: none;
+}
