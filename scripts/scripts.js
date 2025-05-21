@@ -220,6 +220,41 @@ const sliders = document.querySelector('.swiper');
         });
     }
 
+//ИСПОЛЬЗОВАНИЕ LOCALSTORAGE задание 3.7
+// Объявляем переменную modalApplication и помещаем в нее элемент с id "modalApplication"
+const formApplication = document.querySelector("#form");
+// Проверяем, существует ли элемент modalApplication
+if (formApplication) {
+    // Добавляем обработчик события для отправки формы
+    formApplication.addEventListener("submit", (event) => {
+        event.preventDefault(); // Предотвращаем отправку формы
+
+        // Объявляем переменные "username", "tel","email",   и помещаем в нее элементы с id из формы
+        const username = formApplication.querySelector("#name").value;
+        const email = formApplication.querySelector("#email").value;
+
+        // Объявляем переменную modalMessage и помещаем в нее элемент для отображения сообщений о статусе заявки
+        const modalMessage = modalApplication.querySelector("#application-message"); // Исправлено: dialogApplication -> modalApplication
+
+        // Сбрасываем сообщение
+        modalMessage.textContent = "Не прошло!";
+        modalMessage.style.color = "red"; //Убираем цвет по умолчанию
+        // Проверка длины имени пользователя
+        if (username.length < 3) {
+            modalMessage.textContent = "Имя пользователя должно содержать не менее 3 символов";
+            return;
+        }
+
+
+        // Здесь можно добавить отправку данных на сервер
+        modalMessage.textContent = "Заявка отправлена!";
+        modalMessage.style.color = "green"; // Устанавливаем цвет сообщения для успешной отправки
+
+        // Записываем данные в localStorage
+        window.localStorage.setItem("username", username);
+        window.localStorage.setItem("email", email);
+    });
+}
 });
 
 
